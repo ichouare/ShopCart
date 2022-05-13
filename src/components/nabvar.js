@@ -10,10 +10,11 @@ const  Navbar = () => {
   return (
     <nav>
     <ul className='container'>
-    <li><span>e</span>shop</li>
+    <li>eshop</li>
     <li>
+    <span className="amount">{amount}</span>
     <FaCartArrowDown  className="icon"/>
-     <span className="amount">{amount}</span>
+     
     
     </li>
    

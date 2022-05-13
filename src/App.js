@@ -4,6 +4,7 @@ import Navbar from './components/nabvar';
 import Products from './components/products';
 import Amount  from './components/GlobalContext';
 import Reducer from "./components/Reducer"
+import Loder from './components/loder';
 import Data from "./data"
 
 
@@ -44,13 +45,13 @@ useEffect(()=> {
     dispatch({type:"FETCH_FAILED" , payload: error})
 
   })
-} ,[state])
+} ,[])
 
 
-if( ! state.isLoding){
+if(state.isLoding){
   return (
     <div>
-     <h1>loding</h1>
+     <Loder />
     </div>
   )
 }
