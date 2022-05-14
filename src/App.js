@@ -45,7 +45,7 @@ useEffect(()=> {
     dispatch({type:"FETCH_FAILED" , payload: error})
 
   })
-} ,[state])
+} ,[])
 
 
 if(state.isLoding){
